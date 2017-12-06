@@ -1,0 +1,35 @@
+  <body>
+    
+      <div class="form-wrap" >
+        
+          <form >
+          
+              <h1>Sign Up</h1>
+              <h1>{{name}} {{name1}}</h1>
+              
+              <label>First Name:</label>
+              <input type="text" placeholder="First Name" #huddy required><br>
+              <label>Last Name:</label>
+              <input type="text" placeholder="Last Name" #h required><br>
+              <label>Email ID:</label>
+              <input type="email" placeholder="Email ID"  name="email" required>
+              <br><label>Address:</label>
+              <input type="textarea" placeholder="Address" rows="4" cols="50" required>
+              <br><label>Gender:</label>
+              <input type="radio" name="gender" value="male" checked> <label>Male&nbsp;&nbsp; &nbsp;&nbsp; </label>
+              <input type="radio" name="gender" value="female"> <label>Female</label><br>
+              <label>Phone Number:</label>
+              <input type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57'
+              placeholder="phone number" maxlength="10" required>
+              <br><label>Password:</label>
+              <input type="password" placeholder="Password" name="password" required>
+              <br><label>Confirm Password:</label>
+              <input type="password" placeholder="Confirm Password" name="Confirm_Password" required><br>
+    
+              <button (click)="onclick(huddy.value,h.value)">submit</button>
+              
+          </form>
+      
+      </div>
+    
+  </body>
